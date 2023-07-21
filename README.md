@@ -8,6 +8,7 @@ Saldo positivo é um aplicativo para a gestão pessoal de finanças.
     - [ ] O usuário pode remover sua foto de perfil
 
     - [ ] O sistema irá notificar sobre despesas próximas
+    - [ ] O sistema irá lembrar o usuário de acompanhar suas finanças diariamente
     - [ ] O usuário pode alterar suas preferências de notificação
     - [ ] O usuário pode alternar entre os idiomas português e inglês
     - [ ] O usuário pode alternar entre as moedas BRL e USD
