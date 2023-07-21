@@ -1,6 +1,6 @@
 # Saldo positivo
 Saldo positivo é um aplicativo para a gestão pessoal de finanças.
-## Requisitos funcionalidades
+## Requisitos funcionais
     - [ ] O usuário pode escolher um nome de usuário
     - [ ] O usuário pode editar seu nome de usuário
     - [ ] O usuário pode adicionar uma foto ao perfil
