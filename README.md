@@ -1,5 +1,13 @@
 # Saldo positivo
+
 Saldo positivo é um aplicativo para a gestão pessoal de finanças.
+
+## Prototipação
+
+https://www.figma.com/community/file/1266594791525870911
+
+<img src="https://github.com/Pedro-Emanuel/saldo-positivo/assets/32993157/b7aa5dd1-dcc6-4c32-8ade-3d8a55b8e32c" width="636" height="641" />
+
 ## Requisitos funcionais
 - Perfil
   - [ ] O usuário pode escolher um nome de usuário
