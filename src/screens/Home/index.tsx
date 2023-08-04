@@ -1,4 +1,7 @@
-import { Container, TopBar, Section, Image, Text } from "./styles"; 
+import { Container, TopBar, Section, Image, Text, GroupCard } from "./styles"; 
+
+import { ControlCard } from "../../components/ControlCard";
+
 
 export function Home() {
     return(
@@ -10,6 +13,17 @@ export function Home() {
                     <Text>Caio Rian</Text>
                 </Section>
             </TopBar>
+
+            <GroupCard>
+                <ControlCard
+                    type = 'DESPESA'
+                />
+                <ControlCard
+                    type = 'RECEITA'
+                />
+            </GroupCard>
+            
+
         </Container>
     );
 }

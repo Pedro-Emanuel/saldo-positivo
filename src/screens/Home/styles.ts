@@ -33,7 +33,11 @@ export const Image = styled.Image`
 
 export const Text = styled.Text`
     color: ${theme.COLORS.WHITE};
-    font-size: ${theme.FONT_SIZE.LG};
+    font-size: ${theme.FONT_SIZE.LG}px;
     font-family: ${theme.FONT_FAMILY.BOLD};
     margin-left: 16px;
+`;
+
+export const GroupCard = styled.View`
+    flex-direction: row;
 `;
