@@ -1,5 +1,4 @@
-import { ArrowIcon, Container, ControlCardTypeStyleProps, HeaderCard, Icon, Title } from "./styles";
-import { MaterialIcons } from '@expo/vector-icons';
+import { ArrowIcon, Container, ControlCardTypeStyleProps, Header, Icon, Title, SectionTilte } from "./styles";
 
 type Props = {
     type: ControlCardTypeStyleProps;
@@ -8,18 +7,21 @@ type Props = {
 export function ControlCard({ type }: Props) {
     return(
         <Container>
-            <HeaderCard>
-                <Icon
-                    type={type}
-                    name= {type === 'DESPESA' ? 'arrow-circle-down': 'arrow-circle-up'}  
-                />
+            <Header>
+                <SectionTilte>
+                    <Icon
+                        type={type}
+                        name= {type === 'DESPESA' ? 'arrow-circle-down': 'arrow-circle-up'}  
+                    />
 
-                <Title>
-                    {type === 'DESPESA' ?  'Despesas' : 'Receitas'}
-                </Title>
-
+                    <Title>
+                        {type === 'DESPESA' ?  'Despesas' : 'Receitas'}
+                    </Title>
+                </SectionTilte>
                 <ArrowIcon/>
-            </HeaderCard>
+            </Header>
+
+
         </Container>
     );
 }

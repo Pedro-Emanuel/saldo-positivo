@@ -18,7 +18,7 @@ export const Container = styled(TouchableOpacity)`
     background-color: ${theme.COLORS.GRAY_600};
     border-radius: 8px;
 
-    margin-top: 20px;
+    margin-top: 16px;
     margin-right: 4px;
     margin-left: 4px;
 
@@ -35,6 +35,11 @@ export const Title = styled.Text`
     margin-top: 14px;
 `;
 
+export const SectionTilte = styled.View`
+    flex-direction: row;
+    align-items: center;
+`; 
+
 export const Icon = styled(MaterialIcons).attrs<Props>(({ theme, type }) => ({
     size: 28,
     color: type === 'RECEITA' ? theme.COLORS.GREEN_700 : theme.COLORS.RED_600
@@ -48,12 +53,12 @@ export const ArrowIcon = styled(CaretRight).attrs(({ theme }) => ({
     size: 20,
     color: theme.COLORS.WHITE
 }))`
-    margin-top: 14px;
-    margin-left: 18px;
+    margin-top: 12px;
 `;
 
-export const HeaderCard = styled.View`
+export const Header = styled.View`
     flex-direction: row;
     align-items: center;
-
+    justify-content: space-between;
+    padding-right: 16px;
 `;

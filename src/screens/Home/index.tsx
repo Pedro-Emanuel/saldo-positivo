@@ -1,19 +1,14 @@
-import { Container, TopBar, Section, Image, Text, GroupCard } from "./styles"; 
+import { Container, GroupCard } from "./styles"; 
 
-import { ControlCard } from "../../components/ControlCard";
+import { ControlCard } from '../../components/ControlCard';
+import { TopBar } from "../../components/TopBar";
+import { Planning } from "../../components/Planning";
 
 
 export function Home() {
     return(
         <Container>
-            {/* Barra do topo */}
-            <TopBar>
-                <Section>
-                    <Image source={require("../../../assets/icon.png")}/>
-                    <Text>Caio Rian</Text>
-                </Section>
-            </TopBar>
-
+            <TopBar name = 'Caio Rian'/>
             <GroupCard>
                 <ControlCard
                     type = 'DESPESA'
@@ -22,7 +17,7 @@ export function Home() {
                     type = 'RECEITA'
                 />
             </GroupCard>
-            
+            <Planning/>
 
         </Container>
     );
