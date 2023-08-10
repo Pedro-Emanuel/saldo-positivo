@@ -1,4 +1,7 @@
 import { styled } from "styled-components/native";
+
+import { RFPercentage } from "react-native-responsive-fontsize";
+
 import { MaterialIcons } from '@expo/vector-icons';
 import { CaretRight } from 'phosphor-react-native';
 
@@ -12,15 +15,15 @@ type Props = {
 }
 
 export const Container = styled(TouchableOpacity)`
-    width: 168px;
-    height: 187px;
+    width: ${RFPercentage(25.45)}px;
+    height: ${RFPercentage(28.33)}px;
 
     background-color: ${theme.COLORS.GRAY_600};
-    border-radius: 8px;
+    border-radius: 16px;
 
-    margin-top: 16px;
-    margin-right: 4px;
-    margin-left: 4px;
+    margin-top: ${RFPercentage(2.42)}px;
+    margin-right: ${RFPercentage(0.6)}px;
+    margin-left: ${RFPercentage(0.6)}px;
 
     shadow-color: #000000;
     elevation: 8;

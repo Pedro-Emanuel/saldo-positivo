@@ -18,7 +18,7 @@ export function TopBar({name}: Props) {
                 <SettingsButton>
                     <SettingsIcon/>
                 </SettingsButton>
-            </Header>    
+            </Header>  
         </Container>
     );
 }

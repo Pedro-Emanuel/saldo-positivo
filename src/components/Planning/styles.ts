@@ -1,17 +1,18 @@
 import { TouchableOpacity } from "react-native";
 import { styled } from "styled-components/native";
+import { RFPercentage } from 'react-native-responsive-fontsize';
 import theme from "../../theme";
 import { CaretRight } from 'phosphor-react-native';
 
 export const Container = styled(TouchableOpacity)`
-    width: 344px;
-    height: 188px;
+    width: ${RFPercentage(52.12)}px;
+    height: ${RFPercentage(28.48)}px;
 
     background-color: ${theme.COLORS.GRAY_600};
-    border-radius: 8px;
+    border-radius: 16px;
 
-    margin-top: 16px;
-    padding: 0 8px;
+    margin-top: ${RFPercentage(2.42)}px;
+    padding: 0 ${RFPercentage(2.42)}px;
 
     shadow-color: #000000;
     elevation: 8;
