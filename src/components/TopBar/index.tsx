@@ -1,10 +1,13 @@
-import { Container, Header, UserInfo, Photo, UserName, SettingsButton, SettingsIcon, EyeButton, EyeIcon} from './styles';
+import { Container, Header, UserInfo, Photo, UserName, SettingsButton, SettingsIcon, EyeButton, EyeIcon, Month, ArrowLeft, ArrowRight, Period, ArrowButton, GeneralBalance, Balance, Value, SubTitle} from './styles';
 
 type Props = {
-    name: string
+    name: string;
+    month: string;
+    currentBalance: string;
+    expectedBalance: string
 }
 
-export function TopBar({name}: Props) {
+export function TopBar({name, month, currentBalance, expectedBalance}: Props) {
     return(
         <Container>
             <Header>
@@ -18,7 +21,32 @@ export function TopBar({name}: Props) {
                 <SettingsButton>
                     <SettingsIcon/>
                 </SettingsButton>
-            </Header>  
+            </Header>
+            <Period>
+                <ArrowButton><ArrowLeft/></ArrowButton>
+                <Month>{month}</Month>
+                <ArrowButton><ArrowRight/></ArrowButton>
+            </Period>
+            <GeneralBalance>
+                <Balance>
+                    <Value>
+                        <SubTitle>
+                            R$
+                        </SubTitle> 
+                        {currentBalance}
+                    </Value>
+                    <SubTitle>Saldo atual</SubTitle>
+                </Balance>
+                <Balance>
+                    <Value>
+                        <SubTitle>
+                            R$
+                        </SubTitle>
+                        {expectedBalance}
+                    </Value>
+                    <SubTitle>Saldo Previsto</SubTitle>
+                </Balance>
+            </GeneralBalance> 
         </Container>
     );
 }

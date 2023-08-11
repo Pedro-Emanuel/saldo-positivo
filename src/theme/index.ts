@@ -23,9 +23,13 @@ export default {
       BOLD: 'Poppins_700Bold'
     },
     FONT_SIZE: {
+      XSS: 10, 
+      XS: 12,
       SM: 14,
       MD: 16,
       LG: 18,
-      XL: 24
+      XL: 24,
+      XLL: 28
+
     }
   };
